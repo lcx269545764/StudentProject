@@ -1,0 +1,58 @@
+git --version
+
+git config --global user.name lcx
+
+git config --global user.emali 269545764@qq.com
+
+git init 文件名 //初始化
+
+git clone url // 远程获取仓库
+
+touch 文件名 //创建文件  vi 文件名 //编辑文件 cat 文件名 //查看文件
+
+git add 文件名 //提交到暂存区
+
+git status 查看暂存区状态
+
+红色表示此文件暂未放入暂存区
+
+绿色表示此文件 放入但未提交
+
+
+git reset head 文件返回当前版本     用于错误在工作区的文件
+
+git checkout 文件 //还原文件到工作区  用于已经错误文件到暂存区
+
+git rm --cache 文件名//删除暂存区     
+
+git rm -f 文件名 删除暂存区和工作区
+
+
+
+//仅仅只是撤销已提交的版本库，不会修改暂存区和工作区   
+git reset --soft 版本库ID
+
+ 
+
+//仅仅只是撤销已提交的版本库和暂存区，不会修改工作区
+git reset --mixed 版本库ID
+
+ 
+
+//彻底将工作区、暂存区和版本库记录恢复到指定的版本库 用于错误文件被提交到历史区
+git reset --hard 版本库ID
+
+
+git branch 分支名称//新建
+
+git checkout 分支名称//切换
+
+上传到远程
+git remote add origin url //配置远程
+
+先拉在推
+git pull origin master --allow-unrelated-histories
+git push origin master
+
+
+git merge 分支名称
