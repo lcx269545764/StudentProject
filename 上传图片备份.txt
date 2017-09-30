@@ -1,0 +1,3 @@
+cd /usr/local/tomcat/webapps/cctv4gcms/jsp/upload
+rm * -rf
+cp /home/code/image/* -rf .

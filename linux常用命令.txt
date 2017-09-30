@@ -1,0 +1,3 @@
+Ìæ»»²¢²éÕÒ
+
+sed -i "s/zhangsan/lisi/g" `grep zhangsan -rl /modules`
